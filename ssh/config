@@ -1,0 +1,12 @@
+Host 140.116.246.48
+  HostName 140.116.246.48
+  User F74136259
+  Port 2024
+  RemoteCommand none
+
+Host ddns.chih-hao.xyz
+  RemoteCommand none
+  
+Host *
+  RequestTTY force
+  RemoteCommand powershell
