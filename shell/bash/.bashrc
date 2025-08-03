@@ -117,7 +117,7 @@ if ! shopt -oq posix; then
 fi
 export PATH="$HOME/.local/bin:$PATH"
 function cdp(){
-	cd /mnt/d/Anson/program
+	cd /mnt/d/Anson/code
 }
 eval "$(oh-my-posh init bash --config ~/config/atomic.omp.json)"
 eval "$(starship init bash)"

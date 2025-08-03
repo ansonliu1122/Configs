@@ -44,10 +44,15 @@ return {
         opts = { signs = false },
     },
     { -- high-performance color highlighter
-        'norcalli/nvim-colorizer.lua',
+        'NvChad/nvim-colorizer.lua',
         config = function()
-            require('colorizer').setup()
-        end,
+            require("colorizer").setup {
+                filetypes = { "*" },
+                user_default_options = {
+                    names = false, -- 不高亮 CSS 名稱 (like 'red', 'blue')
+                },
+            }
+        end
     },
     { -- This generates docblocks
         'kkoomen/vim-doge',
